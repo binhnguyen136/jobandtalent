@@ -321,6 +321,53 @@
                 }
             }).call(this),
                 function() {
+                    e.Location = function() {
+                        function e(e) {
+                            var t, n;
+                            null == e && (e = ""), (n = document.createElement("a")).href = e.toString(), this.absoluteURL = n.href, 2 > (t = n.hash.length) ? this.requestURL = this.absoluteURL : (this.requestURL = this.absoluteURL.slice(0, -t), this.anchor = n.hash.slice(1))
+                        }
+                        var t, n, r, o;
+                        return e.wrap = function(e) {
+                            return e instanceof this ? e : new this(e)
+                        }, e.prototype.getOrigin = function() {
+                            return this.absoluteURL.split("/", 3).join("/")
+                        }, e.prototype.getPath = function() {
+                            var e, t;
+                            return null != (e = null != (t = this.absoluteURL.match(/\/\/[^\/]*(\/[^?;]*)/)) ? t[1] : void 0) ? e : "/"
+                        }, e.prototype.getPathComponents = function() {
+                            return this.getPath().split("/").slice(1)
+                        }, e.prototype.getLastPathComponent = function() {
+                            return this.getPathComponents().slice(-1)[0]
+                        }, e.prototype.getExtension = function() {
+                            var e, t;
+                            return null != (e = null != (t = this.getLastPathComponent().match(/\.[^.]*$/)) ? t[0] : void 0) ? e : ""
+                        }, e.prototype.isHTML = function() {
+                            return this.getExtension().match(/^(?:|\.(?:htm|html|xhtml))$/)
+                        }, e.prototype.isPrefixedBy = function(e) {
+                            var t;
+                            return t = n(e), this.isEqualTo(e) || o(this.absoluteURL, t)
+                        }, e.prototype.isEqualTo = function(e) {
+                            return this.absoluteURL === (null != e ? e.absoluteURL : void 0)
+                        }, e.prototype.toCacheKey = function() {
+                            return this.requestURL
+                        }, e.prototype.toJSON = function() {
+                            return this.absoluteURL
+                        }, e.prototype.toString = function() {
+                            return this.absoluteURL
+                        }, e.prototype.valueOf = function() {
+                            return this.absoluteURL
+                        }, n = function(e) {
+                            return t(e.getOrigin() + e.getPath())
+                        }, t = function(e) {
+                            return r(e, "/") ? e : e + "/"
+                        }, o = function(e, t) {
+                            return e.slice(0, t.length) === t
+                        }, r = function(e, t) {
+                            return e.slice(-t.length) === t
+                        }, e
+                    }()
+                }.call(this),
+                function() {
                     var t = function(e, t) {
                         return function() {
                             return e.apply(t, arguments)
@@ -21642,11 +21689,6 @@
                             return e.scrollEvent()
                         }
                     }(this))
-                }, t.prototype.scrollToArea = function(e) {
-                    var t, n;
-                    return e.preventDefault(), t = $(e.currentTarget).attr("href"), n = $(t).closest(".landing_area_of_activity_header").offset().top - 170, $("html, body").stop().animate({
-                        scrollTop: n
-                    }, 200)
                 }, t.prototype.scrollEvent = function() {
                     var e, t, n, r;
                     if (t = $(window).scrollTop(), e = this.scrollItems.map(function() {
