@@ -21690,10 +21690,7 @@
                         }
                     }(this))
                 }, t.prototype.scrollToArea = function(e) {
-                    var t, n;
-                    return e.preventDefault(), t = $(e.currentTarget).attr("href"), n = $(t).closest(".landing_area_of_activity_header").offset().top - 170, $("html, body").stop().animate({
-                        scrollTop: n
-                    }, 200)
+
                 }, t.prototype.scrollEvent = function() {
                     var e, t, n, r;
                     if (t = $(window).scrollTop(), e = this.scrollItems.map(function() {
