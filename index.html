@@ -7,6 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
       <link rel="stylesheet" media="all" href="assets/landing-3b468fee715fc41d2a149688e5728ae000862e8b72a5edc49b6f702e0b9db314.css"/>
+      <script type="text/javascript" src="assets/script.js"></script>
    </head>
    <body>
       <div class="landing_main_wrapper">
@@ -287,7 +288,7 @@
                   </div>
                   <ul class="landing_areas_of_activity_buttons for_desktop">
                      <li data-show="first_areas" class="landing_areas_of_activity_button js_loop_areas"></li>
-                     <li data-show="second_areas" class="landing_areas_of_activity_button selected js_loop_areas"></li>
+                     <li data-show="second_areas" class="landing_areas_of_activity_button js_loop_areas selected"></li>
                      <li data-show="third_areas" class="landing_areas_of_activity_button js_loop_areas"></li>
                   </ul>
                   <ul class="landing_areas_of_activity_buttons for_mobile">
@@ -716,5 +717,14 @@
             </ul>
          </div>
       </div>
+
+      <script>
+
+         var LandingView = modulejs.require('LandingView');
+
+         new LandingView();
+
+      </script>
+
    </body>
 </html>
