@@ -719,8 +719,10 @@
       </div>
 
       <script>
-
-         var LandingView = modulejs.require('LandingView');
+         if(window.screen.width > 770)
+            var LandingView = modulejs.require('LandingView');
+         else
+            var LandingView = modulejs.require('MobileLandingView');
 
          new LandingView();
 
