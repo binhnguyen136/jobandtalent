@@ -7,6 +7,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
       <link rel="stylesheet" media="all" href="assets/landing-3b468fee715fc41d2a149688e5728ae000862e8b72a5edc49b6f702e0b9db314.css"/>
+      <script type="text/javascript" src="assets/script.js"></script>
+
    </head>
    <body>
       <div class="landing_main_wrapper">
@@ -839,7 +841,7 @@
                <h2 class="landing_heading centered light narrow">
                   Request your workers and we will create the best team for you
                </h2>
-               <a class="landing_footer_top_button" onclick="wt.sendinfo({ linkId: &#39;company_get_started&#39;, customClickParameter: { &#39;where&#39;: &#39;areas_footer&#39; }});" href="hire_enquiries/first_step/new.html">Get started</a>
+               <a class="landing_footer_top_button" href="hire_enquiries/first_step/new.html">Get started</a>
             </div>
          </div>
          <div class="landing_footer for_areas">
@@ -1036,5 +1038,17 @@
             </ul>
          </div>
       </div>
+      <script>
+
+         var MenuModule = modulejs.require('MobileMenuModule');
+         new MenuModule();
+
+      </script>
+      <script>
+         
+         var LandingView = modulejs.require('MobileAreasView');
+         new LandingView();
+
+      </script>
    </body>
 </html>
