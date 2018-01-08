@@ -21678,7 +21678,7 @@
                     }), this.initEvents(), this.scrollEvent()
                 }
                 return t.prototype.locators = {
-                    scrollLink: ".js_scroll_link"
+                    scrollLink: ""
                 }, t.prototype.initEvents = function() {
                     return $(this.locators.scrollLink).on("click", function(e) {
                         return function(t) {

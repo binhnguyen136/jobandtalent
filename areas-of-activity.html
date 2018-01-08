@@ -61,7 +61,7 @@
             <div class="landing_wrapper">
                <ul class="landing_areas_subheader_list">
                   <li class="landing_areas_subheader_element">
-                     <a href="areas-of-activity.html#hostelry" class="landing_areas_subheader_link js_scroll_link">
+                     <a href="areas-of-activity.html#hostelry" class="landing_areas_subheader_link js_scroll_link selected">
                      Hospitality
                      </a>
                   </li>
@@ -1049,6 +1049,18 @@
          var LandingView = modulejs.require('MobileAreasView');
          new LandingView();
 
+      </script>
+      <script type="text/javascript">
+         var clearSelected = () => {
+            $('.js_scroll_link').removeClass('selected');
+         };
+
+         $('document').ready(function(){
+            $('.js_scroll_link').click(function(){
+               clearSelected();
+               $(this).addClass('selected');
+            });
+         });
       </script>
    </body>
 </html>
