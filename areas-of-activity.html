@@ -14,7 +14,7 @@
       <div class="landing_main_wrapper">
          <div class="landing_header for_scrolling for_areas">
             <div class="landing_wrapper">
-               <a href="areas-of-activity.html#" class="landing_mobile_menu_icon js_show_mobile_menu"></a>
+               <a href="areas-of-activity.html" class="landing_mobile_menu_icon js_show_mobile_menu"></a>
                <a class="landing_logo" href="index.html">
                parttime
                </a>
@@ -23,7 +23,7 @@
                      <a class="landing_menu_link" href="areas-of-activity.html">Activity areas</a>
                   </li>
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link with_dropdown js_contact_link" href="areas-of-activity.html#">Contact</a>
+                     <a class="landing_menu_link with_dropdown js_contact_link" href="areas-of-activity.html">Contact</a>
                      <div class="contact_popup js_contact_popup">
                         <div class="contact_popup_item">
                            <span class="contact_popup_item_heading">
@@ -61,37 +61,37 @@
             <div class="landing_wrapper">
                <ul class="landing_areas_subheader_list">
                   <li class="landing_areas_subheader_element">
-                     <a href="areas-of-activity.html#hostelry" class="landing_areas_subheader_link js_scroll_link selected">
+                     <a href="#hostelry" class="landing_areas_subheader_link js_scroll_link selected">
                      Hospitality
                      </a>
                   </li>
                   <li class="landing_areas_subheader_element">
-                     <a href="areas-of-activity.html#logistics" class="landing_areas_subheader_link js_scroll_link">
+                     <a href="#logistics" class="landing_areas_subheader_link js_scroll_link">
                      Logistics
                      </a>
                   </li>
                   <li class="landing_areas_subheader_element">
-                     <a href="areas-of-activity.html#call_center" class="landing_areas_subheader_link js_scroll_link">
+                     <a href="#call_center" class="landing_areas_subheader_link js_scroll_link">
                      Call Center
                      </a>
                   </li>
                   <li class="landing_areas_subheader_element">
-                     <a href="areas-of-activity.html#events" class="landing_areas_subheader_link js_scroll_link">
+                     <a href="#events" class="landing_areas_subheader_link js_scroll_link">
                      Events
                      </a>
                   </li>
                   <li class="landing_areas_subheader_element">
-                     <a href="areas-of-activity.html#construction" class="landing_areas_subheader_link js_scroll_link">
+                     <a href="#construction" class="landing_areas_subheader_link js_scroll_link">
                      Construction
                      </a>
                   </li>
                   <li class="landing_areas_subheader_element">
-                     <a href="areas-of-activity.html#retail" class="landing_areas_subheader_link js_scroll_link">
+                     <a href="#retail" class="landing_areas_subheader_link js_scroll_link">
                      Retail
                      </a>
                   </li>
                   <li class="landing_areas_subheader_element">
-                     <a href="areas-of-activity.html#others" class="landing_areas_subheader_link js_scroll_link">
+                     <a href="#others" class="landing_areas_subheader_link js_scroll_link">
                      Others
                      </a>
                   </li>
@@ -114,28 +114,28 @@
                   <div class="landing_area_of_activity_wrapper">
                      <ul class="landing_area_of_activity_list js_links_wrapper">
                         <li class="landing_area_of_activity_list_element">
-                           <a href="areas-of-activity.html#" class="landing_area_of_activity_list_link for_hostelry selected js_change_area_text"
+                           <a href="areas-of-activity.html" class="landing_area_of_activity_list_link for_hostelry selected js_change_area_text"
                               data-shows="area_1_hostelry">
                            <span class="landing_area_of_activity_list_check hostelry"></span>
                            Cooks
                            </a>
                         </li>
                         <li class="landing_area_of_activity_list_element">
-                           <a href="areas-of-activity.html#" class="landing_area_of_activity_list_link for_hostelry js_change_area_text"
+                           <a href="areas-of-activity.html" class="landing_area_of_activity_list_link for_hostelry js_change_area_text"
                               data-shows="area_2_hostelry">
                            <span class="landing_area_of_activity_list_check hostelry"></span>
                            Waiters
                            </a>
                         </li>
                         <li class="landing_area_of_activity_list_element">
-                           <a href="areas-of-activity.html#" class="landing_area_of_activity_list_link for_hostelry js_change_area_text"
+                           <a href="areas-of-activity.html" class="landing_area_of_activity_list_link for_hostelry js_change_area_text"
                               data-shows="area_3_hostelry">
                            <span class="landing_area_of_activity_list_check hostelry"></span>
                            Office/Cleanup
                            </a>
                         </li>
                         <li class="landing_area_of_activity_list_element">
-                           <a href="areas-of-activity.html#" class="landing_area_of_activity_list_link for_hostelry js_change_area_text"
+                           <a href="areas-of-activity.html" class="landing_area_of_activity_list_link for_hostelry js_change_area_text"
                               data-shows="area_4_hostelry">
                            <span class="landing_area_of_activity_list_check hostelry"></span>
                            Delivery
@@ -1049,6 +1049,24 @@
          var LandingView = modulejs.require('MobileAreasView');
          new LandingView();
 
+      </script>
+      <script type="text/javascript">
+         $(function(){
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                    || location.hostname == this.hostname) {
+
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                       if (target.length) {
+                         $('html,body').animate({
+                             scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+         });
       </script>
       <script type="text/javascript">
          var clearSelected = () => {
