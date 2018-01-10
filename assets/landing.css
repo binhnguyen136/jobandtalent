@@ -1851,7 +1851,7 @@ a {
     background-position: center center;
     height: 900px;
     margin-top: -90px;
-    background-image: url("success_story/starlite_main_image-23587d13d30a49375cf2316d0ed07b3de1cf6c3fa3c607e0cdc452cc1640cfa5.jpg")
+    background-image: url("success_story/starlite_main_image.jpg")
 }
 
 .landing_tilted_section.for_place_success.for_uniplaces .landing_tilted_content {
@@ -1860,7 +1860,7 @@ a {
     background-position: center center;
     height: 900px;
     margin-top: -90px;
-    background-image: url("success_story/uniplaces_main_image-d58d68b08ecc72b575049875bd34778e018b4b1c3c234f51a752230c47b9151d.jpg")
+    background-image: url("success_story/uniplaces_main_image.jpg")
 }
 
 .landing_tilted_section.for_mention_section {
@@ -1871,7 +1871,7 @@ a {
 }
 
 .landing_tilted_section.for_mention_section.for_starlite {
-    background-image: url("success_story/starlite_mention_image-a71d0aae6bde0a67fdc5bae7722580d689ffe6a0ce9e2fece4937fb2b2d4c06f.jpg")
+    background-image: url("success_story/starlite_mention_image.jpg")
 }
 
 .landing_tilted_section.for_mention_section.for_uniplaces {
@@ -1882,7 +1882,7 @@ a {
     content: "";
     width: 475px;
     height: 475px;
-    background: no-repeat url("success_story/uniplaces_mention_image-6b3190aa010848cb48328a8601f92cf13ababf6be58fedf0a8a9ba8e8e593320.png");
+    background: no-repeat url("success_story/uniplaces_mention_image.png");
     display: block;
     position: absolute
 }
@@ -2403,11 +2403,11 @@ a {
 }
 
 .landing_user_select_image.candidate {
-    background-image: url("shared/user_select_candidate-087421d002b6c5d8da29204de07dee50d46ff6a2cd3f7a6af5778bac5dfb21b6.png")
+    background-image: url("shared/user_select_candidate.png")
 }
 
 .landing_user_select_image.company {
-    background-image: url("shared/user_select_company-ff7bc50d3b296b05440253e0d9b3d0fddcab16cf417fb1798511570d92972123.png")
+    background-image: url("shared/user_select_company.png")
 }
 
 .landing_user_select_text_wrapper {
@@ -2504,16 +2504,16 @@ a {
     padding-top: 140px;
     height: 560px;
     background-size: cover;
-    background-image: url("landing/top_bg-04cba74891c2f3814991aa1be02ac517f6c587f43570e2550f4633358de33512.jpg");
+    background-image: url("landing/top_bg.jpg");
     background-position: center
 }
 
 .landing_top_section.for_candidates {
-    background-image: url("candidates/top_bg-604ee96b4a9a7915fc912ab62393a0e5a8b2988305c3e4b463fad1397de1c342.jpg")
+    background-image: url("candidates/top_bg.jpg")
 }
 
 .landing_top_section.for_spanish_speaking {
-    background-image: url("landing/top_bg_es-f68a2ef491851954e385aa0ae545f5ecdd70990b5c73b7d4e8b883b30e2327d0.jpg")
+    background-image: url("landing/top_bg_es.jpg")
 }
 
 .landing_top_section_logos {
@@ -3755,7 +3755,7 @@ a {
 }
 
 .landing_footer_caption {
-    font-size: 20px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     line-height: 26px
 }
@@ -4507,7 +4507,7 @@ a {
 }
 
 .landing_success_story_qualification.for_starlite:after {
-    background-image: url("success_story/starlite_donut-46ad07ee64a99081c17962c7d790317e2b11f49b0fe7529d19771bcb6e908ca4.png")
+    background-image: url("success_story/starlite_donut.png")
 }
 
 .landing_success_story_qualification_element {
@@ -6443,10 +6443,10 @@ textarea:-ms-input-placeholder {
         display: none
     }
     .landing_user_select_image.candidate {
-        background-image: url("shared/user_select_candidate_mobile-ba61d0a89a7a6d4cec87265b113360c5f3b17c39ce8568027306b5ea62a78231.png")
+        background-image: url("shared/user_select_candidate_mobile.png")
     }
     .landing_user_select_image.company {
-        background-image: url("shared/user_select_company_mobile-14ac3b156cd63807eb2c49e4e2df9e33e829e8f535b0b138443561458a7b41c4.png")
+        background-image: url("shared/user_select_company_mobile.png")
     }
     .landing_user_select_text_wrapper {
         padding: 20px 30px
