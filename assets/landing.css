@@ -2643,23 +2643,15 @@ a {
 }
 
 .landing_area_of_activity_detail {
-    -webkit-border-radius: 8px;
+	-webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    -webkit-box-shadow: 0 15px 30px rgba(41, 79, 133, 0.1);
-    -moz-box-shadow: 0 15px 30px rgba(41, 79, 133, 0.1);
-    box-shadow: 0 15px 30px rgba(41, 79, 133, 0.1);
-    margin-top: 60px;
+    position: absolute;
+    top: 0;
+    background: #fbfbfb;
+    box-shadow: 0 10px 30px 0 rgba(41,79,133,0.1);
     padding: 30px;
-    background-color: #fbfbfb;
-    display: inline-block;
-    width: 240px;
-    margin-right: 30px;
-    text-align: left
-}
-
-.landing_area_of_activity_detail:last-child {
-    margin-right: 0
+    z-index: 1;
 }
 
 .landing_area_of_activity_badge {
